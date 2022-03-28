@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speed Racer</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script type = "module">
+      const firebaseConfig = {
+    apiKey: "AIzaSyD6dOxYVeKq5PBqbcXTs24Abncuc7E9x9I",
+    authDomain: "speedracer-leader.firebaseapp.com",
+    databaseURL: "https://speedracer-leader-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "speedracer-leader",
+    storageBucket: "speedracer-leader.appspot.com",
+    messagingSenderId: "554944762738",
+    appId: "1:554944762738:web:84a81550f789f98effc3eb"
+  };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
